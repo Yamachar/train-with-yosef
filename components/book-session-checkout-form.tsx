@@ -89,7 +89,7 @@ export function BookSessionCheckoutForm({ stripePriceId, enabled }: BookSessionC
       <div className="grid gap-7 md:grid-cols-[250px_1fr] md:items-stretch">
         <aside className="relative overflow-hidden rounded-md border border-white/12 bg-[#0f1528] md:h-[620px]">
           <div className="h-[280px] md:h-full">
-            <Image src="/yosef-logo.png" alt="Yosef emblem" fill sizes="(max-width: 768px) 100vw, 250px" className="object-cover" />
+            <Image src="/yosef-bouhamed-profile.jpg" alt="Yosef bouhamed" fill sizes="(max-width: 768px) 100vw, 250px" className="object-cover" />
           </div>
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent p-4">
             <p className="heading-font text-3xl text-white">High-Performance Coaching</p>
@@ -151,13 +151,12 @@ export function BookSessionCheckoutForm({ stripePriceId, enabled }: BookSessionC
                       type="button"
                       disabled={cell.disabled}
                       onClick={() => setBookingDate(cell.date)}
-                      className={`h-9 rounded-md border text-sm transition ${
-                        selected
-                          ? "border-[#D4AF5A] bg-[#B8952A]/30 text-[#F5F0E8]"
-                          : cell.disabled
-                            ? "cursor-not-allowed border-white/10 bg-[#0d1323] text-[#3e4860]"
-                            : "border-white/15 bg-[#17223a] text-[#d2dbeb] hover:border-[#D4AF5A]/60 hover:text-white"
-                      }`}
+                      className={`h-9 rounded-md border text-sm transition ${selected
+                        ? "border-[#D4AF5A] bg-[#B8952A]/30 text-[#F5F0E8]"
+                        : cell.disabled
+                          ? "cursor-not-allowed border-white/10 bg-[#0d1323] text-[#3e4860]"
+                          : "border-white/15 bg-[#17223a] text-[#d2dbeb] hover:border-[#D4AF5A]/60 hover:text-white"
+                        }`}
                     >
                       {cell.day}
                     </button>
@@ -175,11 +174,10 @@ export function BookSessionCheckoutForm({ stripePriceId, enabled }: BookSessionC
                         key={time}
                         type="button"
                         onClick={() => setBookingTime(time)}
-                        className={`rounded-md border px-3 py-2 text-sm transition ${
-                          selected
-                            ? "border-[#D4AF5A] bg-[#B8952A]/30 text-[#F5F0E8]"
-                            : "border-white/15 bg-[#17223a] text-[#d2dbeb] hover:border-[#D4AF5A]/60 hover:text-white"
-                        }`}
+                        className={`rounded-md border px-3 py-2 text-sm transition ${selected
+                          ? "border-[#D4AF5A] bg-[#B8952A]/30 text-[#F5F0E8]"
+                          : "border-white/15 bg-[#17223a] text-[#d2dbeb] hover:border-[#D4AF5A]/60 hover:text-white"
+                          }`}
                       >
                         {time}
                       </button>
@@ -197,11 +195,10 @@ export function BookSessionCheckoutForm({ stripePriceId, enabled }: BookSessionC
       <button
         type="submit"
         disabled={!canSubmit}
-        className={`w-full rounded-md px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] transition ${
-          canSubmit
-            ? "gold-button"
-            : "cursor-not-allowed border border-zinc-400 bg-zinc-300 text-zinc-600"
-        }`}
+        className={`w-full rounded-md px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] transition ${canSubmit
+          ? "gold-button"
+          : "cursor-not-allowed border border-zinc-400 bg-zinc-300 text-zinc-600"
+          }`}
       >
         {canSubmit ? "Proceed to Checkout" : "Pick Date and Time First"}
       </button>
