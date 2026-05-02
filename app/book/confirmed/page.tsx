@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import { BookingSlotSummary } from "@/components/booking-slot-summary";
 import { MotionReveal } from "@/components/motion-reveal";
@@ -25,7 +26,9 @@ export default function BookingConfirmedPage() {
             <p className="mt-3 text-sm text-[#d7dfeb]">
               We will review your selected date and time, then send your final session confirmation by email.
             </p>
-            <BookingSlotSummary />
+            <Suspense fallback={<div className="mt-4 h-24 animate-pulse rounded-lg bg-white/5" />}>
+              <BookingSlotSummary />
+            </Suspense>
             <p className="mt-2 text-sm text-[#d7dfeb]">
               If your preferred slot is not available, we will contact you with the closest alternatives.
             </p>

@@ -52,7 +52,7 @@ export async function POST(request: Request) {
         : `${siteBaseUrl}/success?session_id={CHECKOUT_SESSION_ID}`;
 
     const stripe = getStripeClient();
-    const lineItems: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
+    const lineItems: NonNullable<Stripe.Checkout.SessionCreateParams["line_items"]> = [];
 
     if (!hasStripePrice(priceId)) {
       const fallbackCents = planType === "book-session" ? 1500 : 1000;
