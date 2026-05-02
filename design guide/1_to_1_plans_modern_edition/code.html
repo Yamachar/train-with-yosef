@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>1-to-1 Training Plans - Yosef Personaaltreener</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "success-green-tint": "rgba(34, 197, 94, 0.1)",
+                    "on-secondary-fixed": "#1d1c17",
+                    "surface-container-high": "#292a2c",
+                    "inverse-on-surface": "#303033",
+                    "text-on-light": "#1A1A1A",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#5c4218",
+                    "error": "#ffb4ab",
+                    "on-secondary-container": "#b9b5ad",
+                    "surface-container-low": "#1b1b1e",
+                    "primary": "#b7c6ee",
+                    "on-surface": "#e4e2e5",
+                    "on-secondary-fixed-variant": "#494741",
+                    "on-tertiary-fixed": "#281800",
+                    "surface-tint": "#b7c6ee",
+                    "primary-fixed": "#d9e2ff",
+                    "error-container": "#93000a",
+                    "on-background": "#e4e2e5",
+                    "surface-dim": "#131316",
+                    "tertiary": "#e7c08b",
+                    "text-on-dark-primary": "#FFFFFF",
+                    "accent-gold-hover": "#D4AF5A",
+                    "primary-container": "#1b2a4a",
+                    "on-surface-variant": "#c5c6cf",
+                    "on-primary-fixed-variant": "#384668",
+                    "background": "#131316",
+                    "surface-variant": "#343437",
+                    "surface-container-lowest": "#0d0e10",
+                    "inverse-surface": "#e4e2e5",
+                    "text-muted": "#6B7280",
+                    "on-tertiary-container": "#ae8c5b",
+                    "inverse-primary": "#4f5e81",
+                    "on-primary": "#213050",
+                    "outline": "#8f9098",
+                    "accent-gold": "#B8952A",
+                    "surface-bright": "#39393c",
+                    "surface-container-highest": "#343437",
+                    "outline-variant": "#45464e",
+                    "tertiary-container": "#3c2600",
+                    "on-primary-container": "#8392b7",
+                    "tertiary-fixed": "#ffddb0",
+                    "primary-fixed-dim": "#b7c6ee",
+                    "secondary-fixed": "#e7e2da",
+                    "text-on-dark-secondary": "#F5F0E8",
+                    "tertiary-fixed-dim": "#e7c08b",
+                    "surface-container": "#1f1f22",
+                    "on-primary-fixed": "#0a1a3a",
+                    "on-tertiary": "#432c03",
+                    "on-secondary": "#32302b",
+                    "secondary-container": "#494741",
+                    "surface": "#131316",
+                    "secondary-fixed-dim": "#cac6be",
+                    "secondary": "#cac6be",
+                    "on-error": "#690005"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "stack-sm": "8px",
+                    "section-padding": "120px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "page-title": [
+                            "Bebas Neue"
+                    ],
+                    "button-label": [
+                            "DM Sans"
+                    ],
+                    "hero-display": [
+                            "Bebas Neue"
+                    ],
+                    "body-main": [
+                            "DM Sans"
+                    ],
+                    "card-title": [
+                            "Bebas Neue"
+                    ]
+            },
+            "fontSize": {
+                    "page-title": [
+                            "64px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "button-label": [
+                            "15px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "hero-display": [
+                            "96px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-main": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "card-title": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        .bg-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+    </style>
+</head>
+<body class="bg-[#111113] text-on-background font-body-main antialiased selection:bg-accent-gold selection:text-background bg-pattern">
+<!-- TopNavBar Component -->
+<header class="bg-[#111113]/80 backdrop-blur-xl w-full top-0 sticky z-50 border-b border-surface-variant shadow-none font-['Bebas_Neue'] tracking-widest uppercase">
+<div class="flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-[1440px] mx-auto">
+<div class="text-2xl font-normal text-accent-gold tracking-tighter">
+                Yosef Personaaltreener
+            </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-accent-gold border-b-2 border-accent-gold pb-1 hover:text-accent-gold hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">Plans</a>
+<a class="text-on-surface-variant hover:text-accent-gold hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">About</a>
+<a class="text-on-surface-variant hover:text-accent-gold hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">Results</a>
+<a class="text-on-surface-variant hover:text-accent-gold hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">Contact</a>
+</nav>
+<button class="bg-accent-gold text-surface-dim hover:bg-accent-gold-hover transition-colors duration-300 font-button-label text-button-label px-6 py-3 rounded-DEFAULT uppercase tracking-widest hidden md:block">
+                Book a Session
+            </button>
+</div>
+</header>
+<!-- Compact Hero Section -->
+<section class="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-[#111113]/90 z-10"></div>
+<div class="absolute inset-0 bg-[url('{{DATA:IMAGE:IMAGE_1}}')] bg-cover bg-center z-0" data-alt="A high-contrast, moody aesthetic shot of a private luxury gym interior. Heavy iron weights and sleek modern fitness equipment are subtly illuminated by directional lighting against deep navy blue and shadows. The atmosphere is intense, disciplined, and exclusive, embodying a high-performance athletic lifestyle without commercial neon cliches. Hints of antique gold equipment accents reflect the scarce light."></div>
+<div class="relative z-20 text-center px-4 max-w-container-max mx-auto">
+<h1 class="font-page-title text-page-title text-text-on-dark-primary tracking-widest uppercase drop-shadow-[0_0_15px_rgba(184,149,42,0.3)]">1-TO-1 TRAINING PLANS</h1>
+</div>
+</section>
+<!-- Notice Section -->
+<section class="max-w-[800px] mx-auto mt-stack-lg mb-stack-lg px-4 relative z-30">
+<div class="border border-accent-gold/50 bg-[#151518]/80 backdrop-blur-md px-6 py-4 text-center rounded-DEFAULT flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(184,149,42,0.1)]">
+<span class="material-symbols-outlined text-accent-gold drop-shadow-[0_0_5px_rgba(184,149,42,0.5)]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lock</span>
+<p class="font-body-main text-body-main text-accent-gold font-bold tracking-wide">Plan content is delivered privately after purchase</p>
+</div>
+</section>
+<!-- Pricing Cards Section -->
+<section class="max-w-container-max mx-auto px-gutter pb-section-padding relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Starter Plan -->
+<div class="bg-[#151518]/60 backdrop-blur-sm border border-surface-variant flex flex-col rounded-DEFAULT p-8 hover:-translate-y-1 transition-all duration-300 hover:border-accent-gold/30 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+<div class="mb-6 border-b border-surface-variant pb-6">
+<h3 class="font-card-title text-card-title text-text-on-dark-primary uppercase mb-2">Starter</h3>
+<p class="font-body-main text-body-main text-on-surface-variant">Build foundational strength and technique.</p>
+</div>
+<div class="mb-8 flex-grow">
+<div class="flex items-center gap-2 mb-6 text-on-surface">
+<span class="material-symbols-outlined text-outline">calendar_month</span>
+<span class="font-button-label text-button-label uppercase text-on-surface-variant">4 Weeks / 8 Sessions</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 animate-fade-in-up delay-100">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-on-surface">Initial Assessment &amp; Goal Setting</span>
+</li>
+<li class="flex items-start gap-3 animate-fade-in-up delay-200">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-on-surface">Customized Workout Routine</span>
+</li>
+<li class="flex items-start gap-3 animate-fade-in-up delay-300">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-on-surface">Basic Nutritional Guidelines</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto">
+<div class="text-center mb-6">
+<span class="font-page-title text-[48px] leading-none text-text-on-dark-primary">TBD</span>
+</div>
+<button class="w-full bg-transparent border border-outline-variant text-on-surface-variant hover:text-accent-gold hover:border-accent-gold transition-colors duration-300 font-button-label text-button-label px-6 py-4 uppercase tracking-widest rounded-DEFAULT">
+                        Select Plan
+                    </button>
+</div>
+</div>
+<!-- Transformation Plan (Highlighted) -->
+<div class="bg-primary-container/80 backdrop-blur-md border border-accent-gold flex flex-col rounded-DEFAULT p-8 relative transform md:scale-105 shadow-[0_0_30px_rgba(184,149,42,0.15)] z-10 hover:shadow-[0_0_40px_rgba(184,149,42,0.25)] transition-shadow duration-300">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent-gold text-surface-dim font-button-label text-[14px] uppercase tracking-widest py-1.5 px-6 rounded-DEFAULT font-bold shadow-[0_0_15px_rgba(184,149,42,0.4)]">
+                    Most Popular
+                </div>
+<div class="mb-6 border-b border-accent-gold/20 pb-6 mt-2">
+<h3 class="font-card-title text-card-title text-accent-gold uppercase mb-2 drop-shadow-[0_0_5px_rgba(184,149,42,0.3)]">Transformation</h3>
+<p class="font-body-main text-body-main text-primary-fixed-dim/80">Comprehensive coaching for total body recomposition.</p>
+</div>
+<div class="mb-8 flex-grow">
+<div class="flex items-center gap-2 mb-6 text-on-surface">
+<span class="material-symbols-outlined text-accent-gold">calendar_month</span>
+<span class="font-button-label text-button-label uppercase text-text-on-dark-primary">12 Weeks / 36 Sessions</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 animate-fade-in-up delay-100">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1 drop-shadow-[0_0_3px_rgba(184,149,42,0.5)]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-text-on-dark-primary">Deep-Dive Assessment &amp; Biometrics</span>
+</li>
+<li class="flex items-start gap-3 animate-fade-in-up delay-200">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1 drop-shadow-[0_0_3px_rgba(184,149,42,0.5)]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-text-on-dark-primary">Adaptive Periodized Programming</span>
+</li>
+<li class="flex items-start gap-3 animate-fade-in-up delay-300">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1 drop-shadow-[0_0_3px_rgba(184,149,42,0.5)]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-text-on-dark-primary">Macronutrient Profiling &amp; Meal Strategies</span>
+</li>
+<li class="flex items-start gap-3 animate-fade-in-up delay-400">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1 drop-shadow-[0_0_3px_rgba(184,149,42,0.5)]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-text-on-dark-primary">24/7 Priority Support Access</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto">
+<div class="text-center mb-6">
+<span class="font-page-title text-[48px] leading-none text-text-on-dark-primary">TBD</span>
+</div>
+<button class="w-full bg-accent-gold text-surface-dim hover:bg-accent-gold-hover hover:shadow-[0_0_15px_rgba(184,149,42,0.4)] transition-all duration-300 font-button-label text-button-label px-6 py-4 uppercase tracking-widest rounded-DEFAULT font-bold">
+                        Select Plan
+                    </button>
+</div>
+</div>
+<!-- Elite Plan -->
+<div class="bg-[#151518]/60 backdrop-blur-sm border border-surface-variant flex flex-col rounded-DEFAULT p-8 hover:-translate-y-1 transition-all duration-300 hover:border-accent-gold/30 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+<div class="mb-6 border-b border-surface-variant pb-6">
+<h3 class="font-card-title text-card-title text-text-on-dark-primary uppercase mb-2">Elite</h3>
+<p class="font-body-main text-body-main text-on-surface-variant">Peak performance prep and sustained mastery.</p>
+</div>
+<div class="mb-8 flex-grow">
+<div class="flex items-center gap-2 mb-6 text-on-surface">
+<span class="material-symbols-outlined text-outline">calendar_month</span>
+<span class="font-button-label text-button-label uppercase text-on-surface-variant">6 Months / 72 Sessions</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 animate-fade-in-up delay-100">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-on-surface">Everything in Transformation</span>
+</li>
+<li class="flex items-start gap-3 animate-fade-in-up delay-200">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-on-surface">Advanced Performance Metrics Tracking</span>
+</li>
+<li class="flex items-start gap-3 animate-fade-in-up delay-300">
+<span class="material-symbols-outlined text-accent-gold text-[20px] mt-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-body-main text-on-surface">Recovery Protocol Management</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto">
+<div class="text-center mb-6">
+<span class="font-page-title text-[48px] leading-none text-text-on-dark-primary">TBD</span>
+</div>
+<button class="w-full bg-transparent border border-outline-variant text-on-surface-variant hover:text-accent-gold hover:border-accent-gold transition-colors duration-300 font-button-label text-button-label px-6 py-4 uppercase tracking-widest rounded-DEFAULT">
+                        Select Plan
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-primary-container border-t border-surface-variant w-full bottom-0 flat font-['Bebas_Neue'] tracking-wider relative z-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-[1440px] mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<div class="text-xl text-accent-gold mb-2 tracking-tighter">Yosef Personaaltreener</div>
+<p class="text-primary-fixed-dim/60 font-body-main text-sm">© 2024 Yosef Personaaltreener. High-Performance Coaching.</p>
+</div>
+<nav class="flex gap-6 items-center">
+<a class="text-primary-fixed-dim/80 hover:text-accent-gold transition-colors text-sm tracking-widest" href="#">Instagram</a>
+<a class="text-primary-fixed-dim/80 hover:text-accent-gold transition-colors text-sm tracking-widest" href="#">Facebook</a>
+<a class="text-primary-fixed-dim/80 hover:text-accent-gold transition-colors text-sm tracking-widest" href="#">Terms of Service</a>
+<a class="text-primary-fixed-dim/80 hover:text-accent-gold transition-colors text-sm tracking-widest" href="#">Privacy</a>
+</nav>
+</div>
+</footer>
+</body></html>

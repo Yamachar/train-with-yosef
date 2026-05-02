@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking Confirmed - Yosef Personaaltreener</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "success-green-tint": "rgba(34, 197, 94, 0.1)",
+                        "on-secondary-fixed": "#1d1c17",
+                        "surface-container-high": "#292a2c",
+                        "inverse-on-surface": "#303033",
+                        "text-on-light": "#1A1A1A",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#5c4218",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#b9b5ad",
+                        "surface-container-low": "#1b1b1e",
+                        "primary": "#b7c6ee",
+                        "on-surface": "#e4e2e5",
+                        "on-secondary-fixed-variant": "#494741",
+                        "on-tertiary-fixed": "#281800",
+                        "surface-tint": "#b7c6ee",
+                        "primary-fixed": "#d9e2ff",
+                        "error-container": "#93000a",
+                        "on-background": "#e4e2e5",
+                        "surface-dim": "#131316",
+                        "tertiary": "#e7c08b",
+                        "text-on-dark-primary": "#FFFFFF",
+                        "accent-gold-hover": "#D4AF5A",
+                        "primary-container": "#1b2a4a",
+                        "on-surface-variant": "#c5c6cf",
+                        "on-primary-fixed-variant": "#384668",
+                        "background": "#131316",
+                        "surface-variant": "#343437",
+                        "surface-container-lowest": "#0d0e10",
+                        "inverse-surface": "#e4e2e5",
+                        "text-muted": "#6B7280",
+                        "on-tertiary-container": "#ae8c5b",
+                        "inverse-primary": "#4f5e81",
+                        "on-primary": "#213050",
+                        "outline": "#8f9098",
+                        "accent-gold": "#B8952A",
+                        "surface-bright": "#39393c",
+                        "surface-container-highest": "#343437",
+                        "outline-variant": "#45464e",
+                        "tertiary-container": "#3c2600",
+                        "on-primary-container": "#8392b7",
+                        "tertiary-fixed": "#ffddb0",
+                        "primary-fixed-dim": "#b7c6ee",
+                        "secondary-fixed": "#e7e2da",
+                        "text-on-dark-secondary": "#F5F0E8",
+                        "tertiary-fixed-dim": "#e7c08b",
+                        "surface-container": "#1f1f22",
+                        "on-primary-fixed": "#0a1a3a",
+                        "on-tertiary": "#432c03",
+                        "on-secondary": "#32302b",
+                        "secondary-container": "#494741",
+                        "surface": "#131316",
+                        "secondary-fixed-dim": "#cac6be",
+                        "secondary": "#cac6be",
+                        "on-error": "#690005"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "section-padding": "120px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px"
+                    },
+                    "fontFamily": {
+                        "page-title": ["Bebas Neue"],
+                        "button-label": ["DM Sans"],
+                        "hero-display": ["Bebas Neue"],
+                        "body-main": ["DM Sans"],
+                        "card-title": ["Bebas Neue"]
+                    },
+                    "fontSize": {
+                        "page-title": ["64px", { "lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "button-label": ["15px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "hero-display": ["96px", { "lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-main": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "card-title": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-main text-body-main antialiased min-h-screen flex flex-col">
+<!-- TopNavBar component logic says to hide navigation shell for linear/transactional success screens. -->
+<main class="flex-grow flex items-center justify-center py-section-padding px-gutter">
+<div class="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
+<!-- Success Banner -->
+<div class="inline-flex items-center justify-center p-6 bg-success-green-tint rounded-full mb-8 shadow-[0_0_40px_rgba(34,197,94,0.15)] border border-green-500/20">
+<span class="material-symbols-outlined filled text-[#D4AF5A] text-5xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="font-page-title text-page-title text-text-on-dark-primary mb-6 uppercase tracking-widest drop-shadow-md">
+                SESSION REQUESTED
+            </h1>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-lg mb-16 text-lg">
+                Please select a time slot that works for you from the calendar below. Our team will review your request and confirm shortly.
+            </p>
+<!-- Grid Layout for Calendar and Info -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 w-full max-w-container-max">
+<!-- Info Column (Image) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="rounded-lg overflow-hidden border border-outline-variant shadow-lg h-full min-h-[300px] relative">
+<img alt="Professional personal trainer guiding a client through an intense workout in a high-end, exclusive private gym. The lighting is dramatic and moody, utilizing deep shadows and crisp highlights to emphasize muscle tone and focus. The color palette features deep navy blues, sleek blacks, and strategic accents of warm gold, embodying a luxury performance aesthetic." class="w-full h-full object-cover absolute inset-0" data-alt="Professional personal trainer guiding a client through an intense workout in a high-end, exclusive private gym. The lighting is dramatic and moody, utilizing deep shadows and crisp highlights to emphasize muscle tone and focus. The color palette features deep navy blues, sleek blacks, and strategic accents of warm gold, embodying a luxury performance aesthetic." src="https://lh3.googleusercontent.com/aida/ADBb0ugf88MvPX_QHWwreC9QHQeTHGh_ElilrmeIUZAnsFi8gkYJdpueniN8cUIBoi-VfY7kc95RAY3du93XGFrhokL9ncwnIA-xuUcUn1bdV5azIK4GEwEFuAzT5M5fle4rbiIZ3stC5JR6Pb_OCpuRd4ORKQ6MVKR2vjVhLW2e64pvP_KnS1QE2ospV1-sEKYnbQVxRy4OqeT0XYOewmZVOM6YHhb_t58728F6SiTSSx4iq_pRgQoaoaiPyuBmyoZhlIX2ZiftkvxC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="font-card-title text-card-title text-text-on-dark-primary mb-2">High-Performance<br/>Coaching</h3>
+<p class="text-sm text-on-surface-variant">Prepare for your consultation.</p>
+</div>
+</div>
+</div>
+<!-- Calendar Embed Placeholder -->
+<div class="lg:col-span-8">
+<div class="w-full h-[600px] border-2 border-dashed border-outline-variant rounded-xl flex items-center justify-center bg-surface-container-low/50 backdrop-blur-sm relative group overflow-hidden">
+<!-- Decorative corner accents -->
+<div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-accent-gold-hover m-4 opacity-50"></div>
+<div class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-accent-gold-hover m-4 opacity-50"></div>
+<div class="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-accent-gold-hover m-4 opacity-50"></div>
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-accent-gold-hover m-4 opacity-50"></div>
+<div class="flex flex-col items-center gap-4 text-on-surface-variant group-hover:text-text-on-dark-primary transition-colors duration-300 z-10">
+<span class="material-symbols-outlined text-4xl mb-2 text-accent-gold">calendar_month</span>
+<span class="font-body-main text-xl tracking-widest uppercase text-outline group-hover:text-accent-gold-hover transition-colors">CALENDAR EMBED</span>
+<p class="text-sm text-text-muted mt-2">Widget will load here</p>
+</div>
+<!-- Subtle background glow -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<!-- Back Action -->
+<div class="mt-12 flex justify-center w-full">
+<a class="inline-flex items-center gap-2 font-button-label text-button-label text-accent-gold border border-accent-gold px-8 py-4 rounded hover:bg-accent-gold hover:text-surface-container-lowest transition-all duration-300 uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+                            Return Home
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer suppression is NOT explicitly requested for transactional screens in the prompt, but Navigation Shell (Top/Side/Bottom) IS. 
+         However, typically footers are part of the 'shell'. The prompt specifically says: 
+         "Automatic Suppression: You MUST exclude the navigation shell if the page intent is: Linear/Transactional..."
+         "The UX Goal: If the user is in a focused journey or a "dead end" relative to the global nav, hide the shell to prioritize the Canvas."
+         I will render a simplified footer to ground the page, as it's requested in the prompt: "Shared Navbar and Footer." 
+         Wait, "Shared Navbar and Footer" is requested in the user prompt for PAGE 5. 
+         Conflict Resolution Protocol says JSON is authority for content, but "Semantic Shell" mandate says:
+         "Automatic Suppression: You MUST exclude the navigation shell if the page intent is: Linear/Transactional: Login, Sign-up, Onboarding, Checkout, or "Success/Confirmation" splash screens."
+         This is a strict "Semantic Shell" mandate. I will follow the strict mandate and suppress the top navbar, but include the footer as requested by user prompt for grounding, or suppress both. 
+         Actually, the mandate says "exclude the navigation shell". Usually this means top/side/bottom navs. I will follow the explicit instruction "Shared Navbar and Footer" from the user prompt but apply the strict mandate to the Navbar (suppress it). Let's include the Footer to satisfy the user prompt's request for grounding, but keep it minimal. Wait, I must suppress the Navbar completely. -->
+<!-- Footer Component from JSON -->
+<footer class="bg-slate-950 dark:bg-[#1B2A4A] text-[#D4AF5A] font-['Bebas_Neue'] tracking-wider full-width bottom-0 border-t-4 border-[#D4AF5A] flat mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-20 gap-8 max-w-[1440px] mx-auto">
+<div class="text-xl text-[#D4AF5A] mb-4 md:mb-0">
+                Yosef Personaaltreener
+            </div>
+<nav class="flex flex-wrap justify-center gap-6 md:gap-8">
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Instagram</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Facebook</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Privacy</a>
+</nav>
+<div class="text-slate-400 text-sm tracking-normal font-sans">
+                © 2024 Yosef Personaaltreener. High-Performance Coaching.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book a Consultation - Yosef Personaaltreener</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "success-green-tint": "rgba(34, 197, 94, 0.1)",
+                        "on-secondary-fixed": "#1d1c17",
+                        "surface-container-high": "#292a2c",
+                        "inverse-on-surface": "#303033",
+                        "text-on-light": "#1A1A1A",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#5c4218",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#b9b5ad",
+                        "surface-container-low": "#1b1b1e",
+                        "primary": "#b7c6ee",
+                        "on-surface": "#e4e2e5",
+                        "on-secondary-fixed-variant": "#494741",
+                        "on-tertiary-fixed": "#281800",
+                        "surface-tint": "#b7c6ee",
+                        "primary-fixed": "#d9e2ff",
+                        "error-container": "#93000a",
+                        "on-background": "#e4e2e5",
+                        "surface-dim": "#131316",
+                        "tertiary": "#e7c08b",
+                        "text-on-dark-primary": "#FFFFFF",
+                        "accent-gold-hover": "#D4AF5A",
+                        "primary-container": "#1b2a4a",
+                        "on-surface-variant": "#c5c6cf",
+                        "on-primary-fixed-variant": "#384668",
+                        "background": "#131316",
+                        "surface-variant": "#343437",
+                        "surface-container-lowest": "#0d0e10",
+                        "inverse-surface": "#e4e2e5",
+                        "text-muted": "#6B7280",
+                        "on-tertiary-container": "#ae8c5b",
+                        "inverse-primary": "#4f5e81",
+                        "on-primary": "#213050",
+                        "outline": "#8f9098",
+                        "accent-gold": "#B8952A",
+                        "surface-bright": "#39393c",
+                        "surface-container-highest": "#343437",
+                        "outline-variant": "#45464e",
+                        "tertiary-container": "#3c2600",
+                        "on-primary-container": "#8392b7",
+                        "tertiary-fixed": "#ffddb0",
+                        "primary-fixed-dim": "#b7c6ee",
+                        "secondary-fixed": "#e7e2da",
+                        "text-on-dark-secondary": "#F5F0E8",
+                        "tertiary-fixed-dim": "#e7c08b",
+                        "surface-container": "#1f1f22",
+                        "on-primary-fixed": "#0a1a3a",
+                        "on-tertiary": "#432c03",
+                        "on-secondary": "#32302b",
+                        "secondary-container": "#494741",
+                        "surface": "#131316",
+                        "secondary-fixed-dim": "#cac6be",
+                        "secondary": "#cac6be",
+                        "on-error": "#690005"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "section-padding": "120px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px"
+                    },
+                    "fontFamily": {
+                        "page-title": ["Bebas Neue"],
+                        "button-label": ["DM Sans"],
+                        "hero-display": ["Bebas Neue"],
+                        "body-main": ["DM Sans"],
+                        "card-title": ["Bebas Neue"]
+                    },
+                    "fontSize": {
+                        "page-title": ["64px", { "lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "button-label": ["15px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "hero-display": ["96px", { "lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-main": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "card-title": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-main text-body-main antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Shared Component -->
+<nav class="bg-slate-950/90 backdrop-blur-md dark:bg-[#1B2A4A] docked full-width top-0 sticky z-50 border-b border-[#D4AF5A]/30">
+<div class="flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-[1440px] mx-auto">
+<div class="text-2xl font-normal text-[#D4AF5A] tracking-tighter font-['Bebas_Neue'] uppercase">
+                Yosef Personaaltreener
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Bebas_Neue'] tracking-widest uppercase">
+<a class="text-slate-300 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">Plans</a>
+<a class="text-slate-300 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">About</a>
+<a class="text-slate-300 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">Results</a>
+<a class="text-[#D4AF5A] border-b-2 border-[#D4AF5A] pb-1 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform" href="#">Contact</a>
+</div>
+<button class="font-button-label text-button-label bg-accent-gold text-on-tertiary-fixed px-6 py-3 rounded hover:bg-accent-gold-hover transition-colors">
+                Book a Session
+            </button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<header class="w-full flex flex-col items-center justify-center pt-section-padding pb-stack-lg px-gutter text-center">
+<h1 class="font-hero-display text-hero-display text-text-on-dark-primary uppercase max-w-4xl mx-auto">
+                BOOK A 1-TO-1 SESSION
+            </h1>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-2xl mx-auto mt-stack-md">
+                Direct, unfiltered access to elite coaching. Dial in your strategy, troubleshoot roadblocks, and get a bespoke plan to shatter your goals.
+            </p>
+</header>
+<!-- 3 Icon + Text Cards Section -->
+<section class="w-full max-w-container-max mx-auto px-gutter py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded p-8 border-t-[4px] border-accent-gold flex flex-col items-start shadow-sm transition-transform hover:-translate-y-1">
+<div class="bg-primary-container text-primary-fixed rounded-full p-4 mb-6">
+<span class="material-symbols-outlined text-4xl" data-icon="videocam">videocam</span>
+</div>
+<h3 class="font-card-title text-card-title uppercase mb-4">Video Call</h3>
+<p class="font-body-main text-body-main opacity-80">
+                        A focused, intense 60-minute virtual consultation where we break down your current regime, face-to-face.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded p-8 border-t-[4px] border-accent-gold flex flex-col items-start shadow-sm transition-transform hover:-translate-y-1">
+<div class="bg-primary-container text-primary-fixed rounded-full p-4 mb-6">
+<span class="material-symbols-outlined text-4xl" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-card-title text-card-title uppercase mb-4">Personalised Advice</h3>
+<p class="font-body-main text-body-main opacity-80">
+                        No templates. We analyze your unique biomechanics, lifestyle constraints, and nutritional gaps to forge real solutions.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded p-8 border-t-[4px] border-accent-gold flex flex-col items-start shadow-sm transition-transform hover:-translate-y-1">
+<div class="bg-primary-container text-primary-fixed rounded-full p-4 mb-6">
+<span class="material-symbols-outlined text-4xl" data-icon="assignment">assignment</span>
+</div>
+<h3 class="font-card-title text-card-title uppercase mb-4">Action Plan</h3>
+<p class="font-body-main text-body-main opacity-80">
+                        Walk away with a concrete, actionable blueprint. Clear steps, exact protocols, and zero ambiguity on what to do next.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Process & Image Section -->
+<section class="w-full bg-surface-container-low py-section-padding border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Process List -->
+<div>
+<h2 class="font-page-title text-page-title text-text-on-dark-primary uppercase mb-12">How It Works</h2>
+<div class="flex flex-col gap-10">
+<!-- Step 1 -->
+<div class="flex items-start gap-6 group">
+<div class="flex-shrink-0 w-16 h-16 rounded-full border-2 border-accent-gold flex items-center justify-center font-card-title text-card-title text-accent-gold group-hover:bg-accent-gold/10 transition-colors">
+                                01
+                            </div>
+<div class="pt-2">
+<h4 class="font-button-label text-button-label text-text-on-dark-primary uppercase tracking-widest mb-2">Book Your Slot</h4>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                                    Select a time that fits your schedule. Payment secures your session immediately.
+                                </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-6 group">
+<div class="flex-shrink-0 w-16 h-16 rounded-full border-2 border-accent-gold flex items-center justify-center font-card-title text-card-title text-accent-gold group-hover:bg-accent-gold/10 transition-colors">
+                                02
+                            </div>
+<div class="pt-2">
+<h4 class="font-button-label text-button-label text-text-on-dark-primary uppercase tracking-widest mb-2">Complete the Intake</h4>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                                    Fill out a comprehensive pre-session form detailing your history, goals, and current bottlenecks.
+                                </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-6 group">
+<div class="flex-shrink-0 w-16 h-16 rounded-full border-2 border-accent-gold flex items-center justify-center font-card-title text-card-title text-accent-gold group-hover:bg-accent-gold/10 transition-colors">
+                                03
+                            </div>
+<div class="pt-2">
+<h4 class="font-button-label text-button-label text-text-on-dark-primary uppercase tracking-widest mb-2">Execute</h4>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                                    We connect via high-quality video link, dismantle your problems, and build your execution protocol.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Canvas Image -->
+<div class="relative w-full aspect-square rounded-xl overflow-hidden shadow-2xl">
+<img alt="High-performance coaching setup" class="object-cover w-full h-full mix-blend-luminosity opacity-80" data-alt="A high-contrast, dramatic portrait of a fitness coaching environment, shot from a dynamic angle. A sleek, modern laptop sits open on a dark textured surface, displaying performance analytics in a dark mode UI. The lighting is moody, with sharp white key lights and deep navy blue shadows creating a highly professional, exclusive atmosphere. A pair of premium matte black headphones rests nearby, emphasizing focus and 1-on-1 virtual consultation. The overall aesthetic is raw, disciplined, and bespoke, aligning with a high-end personal training brand." src="https://lh3.googleusercontent.com/aida/ADBb0ugf88MvPX_QHWwreC9QHQeTHGh_ElilrmeIUZAnsFi8gkYJdpueniN8cUIBoi-VfY7kc95RAY3du93XGFrhokL9ncwnIA-xuUcUn1bdV5azIK4GEwEFuAzT5M5fle4rbiIZ3stC5JR6Pb_OCpuRd4ORKQ6MVKR2vjVhLW2e64pvP_KnS1QE2ospV1-sEKYnbQVxRy4OqeT0XYOewmZVOM6YHhb_t58728F6SiTSSx4iq_pRgQoaoaiPyuBmyoZhlIX2ZiftkvxC"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container/80 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Price Display & CTA Section -->
+<section class="w-full flex flex-col items-center justify-center py-section-padding px-gutter text-center relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+<span class="font-hero-display text-[300px] text-accent-gold">COACH</span>
+</div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="font-button-label text-button-label text-outline uppercase tracking-widest mb-4">Session Price</span>
+<div class="font-hero-display text-hero-display text-accent-gold mb-12 drop-shadow-lg">
+                    TBD
+                </div>
+<button class="group relative bg-accent-gold text-on-tertiary-fixed font-button-label text-button-label px-12 py-6 rounded overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-300">
+<span class="relative z-10 uppercase flex items-center gap-3">
+                        PAY &amp; BOOK YOUR SESSION
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</span>
+<div class="absolute inset-0 h-full w-0 bg-white/20 transition-all duration-300 ease-out group-hover:w-full"></div>
+</button>
+<p class="font-body-main text-sm text-text-muted mt-6">
+                    Secure checkout powered by Stripe.
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-slate-950 dark:bg-[#1B2A4A] full-width bottom-0 border-t-4 border-[#D4AF5A]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-20 gap-8 max-w-[1440px] mx-auto font-['Bebas_Neue'] tracking-wider">
+<div class="flex flex-col items-center md:items-start">
+<div class="text-xl text-[#D4AF5A] mb-4 uppercase">
+                    Yosef Personaaltreener
+                </div>
+<div class="text-slate-400 text-sm font-['DM_Sans'] tracking-normal">
+                    © 2024 Yosef Personaaltreener. High-Performance Coaching.
+                </div>
+</div>
+<div class="flex gap-6 uppercase">
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Instagram</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Facebook</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</body></html>

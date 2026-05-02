@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Online Training - Yosef Personaaltreener</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "success-green-tint": "rgba(34, 197, 94, 0.1)",
+                    "on-secondary-fixed": "#1d1c17",
+                    "surface-container-high": "#292a2c",
+                    "inverse-on-surface": "#303033",
+                    "text-on-light": "#1A1A1A",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#5c4218",
+                    "error": "#ffb4ab",
+                    "on-secondary-container": "#b9b5ad",
+                    "surface-container-low": "#1b1b1e",
+                    "primary": "#b7c6ee",
+                    "on-surface": "#e4e2e5",
+                    "on-secondary-fixed-variant": "#494741",
+                    "on-tertiary-fixed": "#281800",
+                    "surface-tint": "#b7c6ee",
+                    "primary-fixed": "#d9e2ff",
+                    "error-container": "#93000a",
+                    "on-background": "#e4e2e5",
+                    "surface-dim": "#131316",
+                    "tertiary": "#e7c08b",
+                    "text-on-dark-primary": "#FFFFFF",
+                    "accent-gold-hover": "#D4AF5A",
+                    "primary-container": "#1b2a4a",
+                    "on-surface-variant": "#c5c6cf",
+                    "on-primary-fixed-variant": "#384668",
+                    "background": "#131316",
+                    "surface-variant": "#343437",
+                    "surface-container-lowest": "#0d0e10",
+                    "inverse-surface": "#e4e2e5",
+                    "text-muted": "#6B7280",
+                    "on-tertiary-container": "#ae8c5b",
+                    "inverse-primary": "#4f5e81",
+                    "on-primary": "#213050",
+                    "outline": "#8f9098",
+                    "accent-gold": "#B8952A",
+                    "surface-bright": "#39393c",
+                    "surface-container-highest": "#343437",
+                    "outline-variant": "#45464e",
+                    "tertiary-container": "#3c2600",
+                    "on-primary-container": "#8392b7",
+                    "tertiary-fixed": "#ffddb0",
+                    "primary-fixed-dim": "#b7c6ee",
+                    "secondary-fixed": "#e7e2da",
+                    "text-on-dark-secondary": "#F5F0E8",
+                    "tertiary-fixed-dim": "#e7c08b",
+                    "surface-container": "#1f1f22",
+                    "on-primary-fixed": "#0a1a3a",
+                    "on-tertiary": "#432c03",
+                    "on-secondary": "#32302b",
+                    "secondary-container": "#494741",
+                    "surface": "#131316",
+                    "secondary-fixed-dim": "#cac6be",
+                    "secondary": "#cac6be",
+                    "on-error": "#690005"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "stack-sm": "8px",
+                    "section-padding": "120px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "page-title": ["Bebas Neue"],
+                    "button-label": ["DM Sans"],
+                    "hero-display": ["Bebas Neue"],
+                    "body-main": ["DM Sans"],
+                    "card-title": ["Bebas Neue"]
+            },
+            "fontSize": {
+                    "page-title": ["64px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "button-label": ["15px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "hero-display": ["96px", {"lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-main": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "card-title": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}]
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'shimmer': 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%)',
+              'gold-gradient': 'linear-gradient(135deg, #B8952A 0%, #D4AF5A 50%, #B8952A 100%)'
+            },
+            keyframes: {
+              shimmer: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100%)' }
+              },
+              pulseGold: {
+                '0%, 100%': { boxShadow: '0 0 0 0 rgba(184, 149, 42, 0)' },
+                '50%': { boxShadow: '0 0 20px 0 rgba(184, 149, 42, 0.4)' }
+              }
+            },
+            animation: {
+              shimmer: 'shimmer 2s infinite',
+              pulseGold: 'pulseGold 2s infinite'
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .material-symbols-outlined.fill {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      
+      /* Stepper Radio Input Styling - Visually Hidden but Accessible */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+
+      /* Custom Selection State for Cards */
+      .plan-card-input:checked + .plan-card-label {
+        border-color: #D4AF5A; /* accent-gold-hover */
+        background-color: rgba(184, 149, 42, 0.08); /* slightly stronger gold tint */
+        box-shadow: 0 0 20px rgba(184, 149, 42, 0.2);
+      }
+      
+      /* Form Background Texture */
+      .form-bg-texture {
+        background-image: radial-gradient(circle at 50% 0%, #1b2a4a 0%, #0d1525 100%);
+      }
+      
+      /* Animated Progress Bar */
+      .progress-line {
+        background: linear-gradient(90deg, #B8952A 0%, #D4AF5A 50%, #B8952A 100%);
+        background-size: 200% auto;
+        animation: shimmer 2s linear infinite;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-main antialiased selection:bg-accent-gold selection:text-background flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-slate-950/90 backdrop-blur-md dark:bg-[#1B2A4A] font-['Bebas_Neue'] tracking-widest uppercase docked full-width top-0 sticky z-50 border-b border-[#D4AF5A]/30 flat no shadows flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-[1440px] mx-auto transition-transform">
+<a class="text-2xl font-normal text-[#D4AF5A] tracking-tighter" href="#">Yosef Personaaltreener</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#D4AF5A] border-b-2 border-[#D4AF5A] pb-1 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300" href="#">Plans</a>
+<a class="text-slate-300 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300" href="#">About</a>
+<a class="text-slate-300 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300" href="#">Results</a>
+<a class="text-slate-300 hover:text-[#D4AF5A] hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:inline-flex bg-gold-gradient relative overflow-hidden text-background font-button-label text-button-label px-6 py-3 rounded uppercase transition-all hover:shadow-[0_0_15px_rgba(212,175,90,0.4)] group">
+<span class="relative z-10">Book a Session</span>
+<div class="absolute inset-0 bg-shimmer animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+<button class="md:hidden text-[#D4AF5A]">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col">
+<!-- Short Hero Banner -->
+<section class="bg-primary-container py-section-padding/2 relative overflow-hidden flex flex-col items-center justify-center min-h-[307px]">
+<!-- Decorative Background Element -->
+<div class="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center">
+<div class="w-96 h-96 border-2 border-accent-gold rounded-full absolute mix-blend-overlay"></div>
+<div class="w-72 h-72 border border-accent-gold rounded-full absolute mix-blend-overlay"></div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter w-full relative z-10 text-center">
+<h1 class="font-page-title text-page-title text-text-on-dark-primary uppercase mb-stack-sm tracking-widest drop-shadow-md">ONLINE TRAINING</h1>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-2xl mx-auto">Find the perfect coaching program tailored to your goals, experience, and lifestyle.</p>
+</div>
+</section>
+<!-- Stepper Form Section -->
+<section class="form-bg-texture py-section-padding flex-grow relative border-y border-outline/10">
+<div class="max-w-3xl mx-auto px-gutter w-full">
+<!-- Progress Bar -->
+<div class="w-full bg-white/5 h-[2px] mb-stack-lg relative overflow-hidden rounded-full">
+<div class="absolute top-0 left-0 h-full progress-line transition-all duration-500 ease-in-out" style="width: 25%;"></div>
+</div>
+<!-- Form Container -->
+<form class="flex flex-col gap-stack-lg relative z-10">
+<!-- Step 1: Goal Selection -->
+<div class="step-container w-full" id="step-1">
+<div class="text-center mb-stack-md">
+<span class="text-accent-gold font-button-label text-button-label uppercase mb-2 block tracking-widest">Step 1 of 5</span>
+<h2 class="font-card-title text-card-title text-text-on-dark-primary uppercase tracking-wider">What is your primary goal?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Goal Card 1 -->
+<div class="relative group">
+<input checked="" class="plan-card-input sr-only" id="goal-muscle" name="goal" type="radio"/>
+<label class="plan-card-label relative flex flex-col bg-[#162238]/80 backdrop-blur-sm border-2 border-transparent rounded-xl p-8 cursor-pointer transition-all duration-300 hover:bg-[#1e2f4c] hover:border-accent-gold/50 h-full group-hover:-translate-y-1" for="goal-muscle">
+<span class="material-symbols-outlined text-accent-gold text-5xl mb-6 block font-light transition-transform group-hover:scale-110 duration-300">fitness_center</span>
+<h3 class="font-card-title text-2xl text-text-on-dark-primary mb-3 uppercase tracking-wide">Muscle Building</h3>
+<p class="text-primary-fixed-dim/80 font-body-main text-sm leading-relaxed">Hypertrophy focused training for maximum lean mass gain.</p>
+</label>
+</div>
+<!-- Goal Card 2 -->
+<div class="relative group">
+<input class="plan-card-input sr-only" id="goal-fatloss" name="goal" type="radio"/>
+<label class="plan-card-label relative flex flex-col bg-[#162238]/80 backdrop-blur-sm border-2 border-transparent rounded-xl p-8 cursor-pointer transition-all duration-300 hover:bg-[#1e2f4c] hover:border-accent-gold/50 h-full group-hover:-translate-y-1" for="goal-fatloss">
+<span class="material-symbols-outlined text-accent-gold text-5xl mb-6 block font-light transition-transform group-hover:scale-110 duration-300">local_fire_department</span>
+<h3 class="font-card-title text-2xl text-text-on-dark-primary mb-3 uppercase tracking-wide">Fat Loss</h3>
+<p class="text-primary-fixed-dim/80 font-body-main text-sm leading-relaxed">Metabolic conditioning and deficit nutrition to lean out.</p>
+</label>
+</div>
+<!-- Goal Card 3 -->
+<div class="relative group">
+<input class="plan-card-input sr-only" id="goal-strength" name="goal" type="radio"/>
+<label class="plan-card-label relative flex flex-col bg-[#162238]/80 backdrop-blur-sm border-2 border-transparent rounded-xl p-8 cursor-pointer transition-all duration-300 hover:bg-[#1e2f4c] hover:border-accent-gold/50 h-full group-hover:-translate-y-1" for="goal-strength">
+<span class="material-symbols-outlined text-accent-gold text-5xl mb-6 block font-light transition-transform group-hover:scale-110 duration-300">monitor_weight</span>
+<h3 class="font-card-title text-2xl text-text-on-dark-primary mb-3 uppercase tracking-wide">Strength &amp; Power</h3>
+<p class="text-primary-fixed-dim/80 font-body-main text-sm leading-relaxed">Powerlifting principles to increase your major lifts.</p>
+</label>
+</div>
+<!-- Goal Card 4 -->
+<div class="relative group">
+<input class="plan-card-input sr-only" id="goal-endurance" name="goal" type="radio"/>
+<label class="plan-card-label relative flex flex-col bg-[#162238]/80 backdrop-blur-sm border-2 border-transparent rounded-xl p-8 cursor-pointer transition-all duration-300 hover:bg-[#1e2f4c] hover:border-accent-gold/50 h-full group-hover:-translate-y-1" for="goal-endurance">
+<span class="material-symbols-outlined text-accent-gold text-5xl mb-6 block font-light transition-transform group-hover:scale-110 duration-300">directions_run</span>
+<h3 class="font-card-title text-2xl text-text-on-dark-primary mb-3 uppercase tracking-wide">Athletic Performance</h3>
+<p class="text-primary-fixed-dim/80 font-body-main text-sm leading-relaxed">Speed, agility, and overall functional fitness.</p>
+</label>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="flex justify-between items-center mt-stack-md pt-stack-md border-t border-white/10">
+<button class="px-6 py-3 rounded text-text-on-dark-primary font-button-label text-button-label uppercase hover:text-accent-gold transition-colors opacity-50 cursor-not-allowed" disabled="" type="button">Back</button>
+<button class="px-8 py-3 bg-gold-gradient rounded text-background font-button-label text-button-label uppercase flex items-center gap-2 relative overflow-hidden group hover:shadow-[0_0_15px_rgba(212,175,90,0.4)] transition-all" type="button">
+<span class="relative z-10 flex items-center gap-2">
+                            Next Step
+                            <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-shimmer animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-[#1B2A4A] font-['Bebas_Neue'] tracking-wider full-width bottom-0 border-t-4 border-[#D4AF5A] flat flex flex-col md:flex-row justify-between items-center w-full px-12 py-20 gap-8 max-w-[1440px] mx-auto">
+<div class="text-xl text-[#D4AF5A] mb-4 md:mb-0">Yosef Personaaltreener</div>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Instagram</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Facebook</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:opacity-75" href="#">Privacy</a>
+</div>
+<div class="text-slate-400 font-sans text-sm tracking-normal">
+            © 2024 Yosef Personaaltreener. High-Performance Coaching.
+        </div>
+</footer>
+</body></html>

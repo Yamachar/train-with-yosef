@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment Success - Yosef Personaaltreener</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "success-green-tint": "rgba(34, 197, 94, 0.1)",
+                        "on-secondary-fixed": "#1d1c17",
+                        "surface-container-high": "#292a2c",
+                        "inverse-on-surface": "#303033",
+                        "text-on-light": "#1A1A1A",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#5c4218",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#b9b5ad",
+                        "surface-container-low": "#1b1b1e",
+                        "primary": "#b7c6ee",
+                        "on-surface": "#e4e2e5",
+                        "on-secondary-fixed-variant": "#494741",
+                        "on-tertiary-fixed": "#281800",
+                        "surface-tint": "#b7c6ee",
+                        "primary-fixed": "#d9e2ff",
+                        "error-container": "#93000a",
+                        "on-background": "#e4e2e5",
+                        "surface-dim": "#131316",
+                        "tertiary": "#e7c08b",
+                        "text-on-dark-primary": "#FFFFFF",
+                        "accent-gold-hover": "#D4AF5A",
+                        "primary-container": "#1b2a4a",
+                        "on-surface-variant": "#c5c6cf",
+                        "on-primary-fixed-variant": "#384668",
+                        "background": "#131316",
+                        "surface-variant": "#343437",
+                        "surface-container-lowest": "#0d0e10",
+                        "inverse-surface": "#e4e2e5",
+                        "text-muted": "#6B7280",
+                        "on-tertiary-container": "#ae8c5b",
+                        "inverse-primary": "#4f5e81",
+                        "on-primary": "#213050",
+                        "outline": "#8f9098",
+                        "accent-gold": "#B8952A",
+                        "surface-bright": "#39393c",
+                        "surface-container-highest": "#343437",
+                        "outline-variant": "#45464e",
+                        "tertiary-container": "#3c2600",
+                        "on-primary-container": "#8392b7",
+                        "tertiary-fixed": "#ffddb0",
+                        "primary-fixed-dim": "#b7c6ee",
+                        "secondary-fixed": "#e7e2da",
+                        "text-on-dark-secondary": "#F5F0E8",
+                        "tertiary-fixed-dim": "#e7c08b",
+                        "surface-container": "#1f1f22",
+                        "on-primary-fixed": "#0a1a3a",
+                        "on-tertiary": "#432c03",
+                        "on-secondary": "#32302b",
+                        "secondary-container": "#494741",
+                        "surface": "#131316",
+                        "secondary-fixed-dim": "#cac6be",
+                        "secondary": "#cac6be",
+                        "on-error": "#690005"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "section-padding": "120px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px"
+                    },
+                    "fontFamily": {
+                        "page-title": ["Bebas Neue"],
+                        "button-label": ["DM Sans"],
+                        "hero-display": ["Bebas Neue"],
+                        "body-main": ["DM Sans"],
+                        "card-title": ["Bebas Neue"]
+                    },
+                    "fontSize": {
+                        "page-title": ["64px", { "lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "button-label": ["15px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "hero-display": ["96px", { "lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-main": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "card-title": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-primary-container text-on-background min-h-screen flex flex-col font-body-main text-body-main selection:bg-accent-gold selection:text-black">
+<!-- Suppressing Navigation since this is a transactional success page -->
+<main class="flex-grow flex items-center justify-center py-section-padding px-gutter relative overflow-hidden">
+<!-- Abstract Background Element -->
+<div class="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center">
+<div class="w-[800px] h-[800px] border border-accent-gold rounded-full absolute mix-blend-overlay"></div>
+<div class="w-[600px] h-[600px] border border-accent-gold rounded-full absolute mix-blend-overlay transform rotate-45"></div>
+</div>
+<div class="max-w-[600px] w-full text-center relative z-10 flex flex-col items-center">
+<!-- Animated Gold Checkmark Placeholder -->
+<div class="w-32 h-32 mb-stack-lg rounded-full border-2 border-accent-gold flex items-center justify-center bg-surface/50 backdrop-blur-sm shadow-[0_10px_30px_rgba(212,175,90,0.1)] relative">
+<!-- Using static icon instead of animation as per rules, but styling to look dynamic -->
+<span class="material-symbols-outlined text-[64px] text-accent-gold" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<h1 class="font-page-title text-page-title text-text-on-dark-primary uppercase mb-stack-md">PAYMENT CONFIRMED</h1>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-md mx-auto mb-stack-lg">
+                Your transaction was successful. Check your email for details.
+            </p>
+<a class="inline-flex items-center justify-center px-8 py-4 border border-accent-gold text-accent-gold font-button-label text-button-label uppercase tracking-widest hover:bg-accent-gold/10 transition-colors duration-300" href="/">
+                Back to Home
+            </a>
+<!-- Optional visually interesting element below -->
+<div class="mt-section-padding w-full max-w-[300px] h-1 bg-gradient-to-r from-transparent via-accent-gold/30 to-transparent"></div>
+</div>
+</main>
+<!-- Suppressing Footer since this is a focused success screen to prioritize the canvas -->
+</body></html>

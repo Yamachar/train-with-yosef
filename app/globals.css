@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+  --bg-navy: #1b2a4a;
+  --bg-cream: #f5f0e8;
+  --accent-gold: #b8952a;
+  --accent-gold-hover: #d4af5a;
+  --text-dark: #1a1a1a;
+  --text-muted: #6b7280;
+  --text-light: #ffffff;
+  --text-light-soft: #f5f0e8;
+  --card-shadow: 0 18px 40px rgba(8, 15, 31, 0.2);
+}
+
+@theme inline {
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-bebas-neue);
+  --color-accent-gold: var(--accent-gold);
+  --color-accent-gold-hover: var(--accent-gold-hover);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading-font {
+  font-family: var(--font-bebas-neue), sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.font-page-title {
+  font-family: var(--font-bebas-neue), sans-serif;
+}
+
+.font-button-label {
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+.text-button-label {
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.section-shell {
+  width: min(1280px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.gold-button {
+  position: relative;
+  overflow: hidden;
+  background: var(--accent-gold);
+  color: #101010;
+  border: 1px solid transparent;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.gold-button:hover {
+  background: var(--accent-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(184, 149, 42, 0.35);
+}
+
+.gold-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -140%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+  transform: skewX(-18deg);
+  transition: left 0.35s ease;
+}
+
+.gold-button:hover::after {
+  left: 130%;
+}
+
+.outline-gold-button {
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  background: transparent;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.outline-gold-button:hover {
+  background: rgba(184, 149, 42, 0.14);
+  transform: translateY(-2px);
+}
+
+.feature-card {
+  border-top: 3px solid var(--accent-gold);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(8, 15, 31, 0.32);
+}
+
+.page-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #9ca3af;
+  color: #4b5563;
+  background: #e5e7eb;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cal-frame {
+  border: 2px dashed rgba(184, 149, 42, 0.45);
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    width: min(1280px, calc(100% - 2rem));
+  }
+}
