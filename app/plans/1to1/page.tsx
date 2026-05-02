@@ -91,9 +91,17 @@ export default function OneToOnePlansPage() {
                       }`}
                     >
                       {plan.isPopular ? (
-                        <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-sm bg-accent-gold px-6 py-1.5 text-[0.82rem] font-bold uppercase tracking-[0.16em] text-[#131316] shadow-[0_0_15px_rgba(184,149,42,0.4)]">
+                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-2 whitespace-nowrap rounded-sm bg-accent-gold px-4 py-1.5 text-[0.82rem] font-bold uppercase tracking-[0.16em] text-[#131316] shadow-[0_0_15px_rgba(184,149,42,0.4)]">
+                          <svg
+                            className="h-4 w-4"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5ZM19 19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V18H19V19Z" />
+                          </svg>
                           Most Popular
-                        </span>
+                        </div>
                       ) : null}
 
                       <div className={`mb-6 border-b pb-6 ${plan.isPopular ? "mt-2 border-accent-gold/20" : "border-[#343437]"}`}>
