@@ -16,7 +16,10 @@ export type PlanCardData = {
 };
 
 export const siteBaseUrl =
-  normalize(process.env.NEXT_PUBLIC_SITE_URL) || "http://localhost:3000";
+  normalize(process.env.NEXT_PUBLIC_SITE_URL) ||
+  (process.env.NODE_ENV === "production"
+    ? "https://trainwithyosef.vercel.app"
+    : "http://localhost:3000");
 
 export const calBookingUrl =
   normalize(process.env.NEXT_PUBLIC_CAL_BOOKING_URL) || "https://cal.com";
